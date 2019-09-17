@@ -1,0 +1,114 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(kdapopstars.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat:repeat;
+}
+
+.navbar {
+    padding-top: 4;
+    padding-bottom: 4;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    /*color: rgba(255,255,255,.5);*/
+    color: white;
+}
+
+.navbar-dark .navbar-toggler {
+    color: white;
+    border-color: white;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#content {
+    /* text-align: center; */
+    padding-top: 25%;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+h1 {
+    /*color: #bdc2c9;*/
+    color: white;
+    font-family: 'Share Tech Mono';
+    font-size: 5em;
+}
+
+h2 {
+    /*color: #bdc2c9;*/
+    color: white;
+    font-family: 'Share Tech Mono';
+    font-size: 3em;
+}
+
+h3 {
+    /*color: #bdc2c9;*/
+    color: white;
+    font-family: 'Share Tech Mono';
+    font-size: 3em;
+}
+
+h4 {
+    /*color: #bdc2c9;*/
+    color: white;
+    font-family: 'Share Tech Mono';
+    font-size: 3em;
+}
+
+hr {
+    width: 400px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: -5; */
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        height: 300%;
+        top: -100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        width: 300%;
+        left: -100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+      background: url('bg.jpg') center center / cover no-repeat;
+    }
+  
+    .fullscreen-bg__video {
+      display: none;
+    }
+  }
